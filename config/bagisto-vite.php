@@ -16,11 +16,6 @@ return [
             'build_directory'          => 'themes/admin/default/build',
             'package_assets_directory' => 'src/Resources/assets',
         ],
-        'blog' => [
-            'hot_file'                 => 'blog-vite.hot',
-            'build_directory'          => 'themes/blog/build',
-            'package_assets_directory' => 'src/Resources/assets',
-        ],
 
         'shop' => [
             'hot_file'                 => 'shop-default-vite.hot',
