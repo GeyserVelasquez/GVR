@@ -1,13 +1,29 @@
 {
-  "resources/css/app.css": {
-    "file": "assets/app-BTDccJ9N.css",
-    "src": "resources/css/app.css",
+  "packages/Webkul/Admin/src/Resources/assets/css/app.css": {
+    "file": "assets/app-XAGNiqJ_.css",
+    "src": "packages/Webkul/Admin/src/Resources/assets/css/app.css",
     "isEntry": true
   },
-  "resources/js/app.js": {
-    "file": "assets/app-eMHK6VFw.js",
-    "name": "app",
-    "src": "resources/js/app.js",
+  "packages/Webkul/Admin/src/Resources/assets/fonts/bagisto-admin.woff": {
+    "file": "assets/bagisto-admin-BzOkv6lg.woff",
+    "src": "packages/Webkul/Admin/src/Resources/assets/fonts/bagisto-admin.woff"
+  },
+  "packages/Webkul/Installer/src/Resources/assets/css/app.css": {
+    "file": "assets/app-yUPJ8pBy.css",
+    "src": "packages/Webkul/Installer/src/Resources/assets/css/app.css",
     "isEntry": true
+  },
+  "packages/Webkul/Installer/src/Resources/assets/fonts/bagisto-installer.woff": {
+    "file": "assets/bagisto-installer-CR1_oTt2.woff",
+    "src": "packages/Webkul/Installer/src/Resources/assets/fonts/bagisto-installer.woff"
+  },
+  "packages/Webkul/Shop/src/Resources/assets/css/app.css": {
+    "file": "assets/app-BIWxmtOL.css",
+    "src": "packages/Webkul/Shop/src/Resources/assets/css/app.css",
+    "isEntry": true
+  },
+  "packages/Webkul/Shop/src/Resources/assets/fonts/bagisto-shop.woff": {
+    "file": "assets/bagisto-shop-BHAKyv0r.woff",
+    "src": "packages/Webkul/Shop/src/Resources/assets/fonts/bagisto-shop.woff"
   }
 }

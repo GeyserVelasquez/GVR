@@ -47,15 +47,14 @@
         </div>
 
         <!-- For Mobile view -->
-        <x-shop::accordion
-            :is-active="false"
-            class="hidden !w-full rounded-xl !border-2 !border-[#e9decc] max-1060:block max-sm:rounded-lg"
+        <div
+            class="hidden !w-full rounded-xl max-1060:block max-sm:rounded-lg"
         >
-            <x-slot:header class="rounded-t-lg bg-[#F1EADF] font-medium max-md:p-2.5 max-sm:px-3 max-sm:py-2 max-sm:text-sm">
+           <!-- <x-slot:header class="rounded-t-lg bg-[#F1EADF] font-medium max-md:p-2.5 max-sm:px-3 max-sm:py-2 max-sm:text-sm">
                 @lang('shop::app.components.layouts.footer.footer-content')
-            </x-slot>
+            </x-slot> -->
 
-            <x-slot:content class="flex justify-between !bg-transparent !p-4">
+            <div class="flex justify-between !bg-transparent !p-4">
                 @if ($customization?->options)
                     @foreach ($customization->options as $footerLinkSection)
                         <ul class="grid gap-5 text-sm">
@@ -77,8 +76,8 @@
                         </ul>
                     @endforeach
                 @endif
-            </x-slot>
-        </x-shop::accordion>
+            </div>
+        </div>
 
         {!! view_render_event('bagisto.shop.layout.footer.newsletter_subscription.before') !!}
 
@@ -86,7 +85,7 @@
         @if (core()->getConfigData('customer.settings.newsletter.subscription'))
             <div class="grid gap-2.5">
                 <p
-                    class="max-w-[400px] text-3xl italic leading-[45px] text-navyBlue max-md:text-2xl max-sm:text-lg"
+                    class="max-w-[400px] text-3xl italic leading-[45px] text-black max-md:text-2xl max-sm:text-lg"
                     role="heading"
                     aria-level="2"
                 >
