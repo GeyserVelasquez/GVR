@@ -4303,7 +4303,7 @@ return [
                     'set-order-status'               => 'Establecer el estado del pedido después de crear la factura a',
                     'sort-order'                     => 'Orden de clasificación',
                     'status'                         => 'Estado',
-                    'title'                          => 'Título ',
+                    'title'                          => 'Título',
                 ],
 
                 'order-settings' => [

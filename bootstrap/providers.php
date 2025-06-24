@@ -11,6 +11,8 @@ return [
      */
     Webkul\Admin\Providers\AdminServiceProvider::class,
     Webkul\Attribute\Providers\AttributeServiceProvider::class,
+    Webkul\Bancamiga\Providers\BancamigaServiceProvider::class,
+    Webkul\Mercantil\Providers\MercantilServiceProvider::class,
     Webkul\BookingProduct\Providers\BookingProductServiceProvider::class,
     Webkul\CMS\Providers\CMSServiceProvider::class,
     Webkul\CartRule\Providers\CartRuleServiceProvider::class,
