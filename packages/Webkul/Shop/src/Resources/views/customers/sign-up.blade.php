@@ -172,6 +172,28 @@
 
                     {!! view_render_event('bagisto.shop.customers.signup_form.password_confirmation.after') !!}
 
+                    <!-- Teléfono -->
+                    <x-shop::form.control-group>
+                        <x-shop::form.control-group.label class="required">
+                            @lang('shop::app.customers.signup-form.phone')
+                        </x-shop::form.control-group.label>
+
+                        <x-shop::form.control-group.control
+                            type="text"
+                            name="phone"
+                            rules="required|phone"
+                            :value="old('phone')"
+                            :label="trans('shop::app.customers.signup-form.phone')"
+                            :placeholder="trans('shop::app.customers.signup-form.phone')"
+                            :aria-label="trans('shop::app.customers.signup-form.phone')"
+                            aria-required="true"
+                        />
+
+                        <x-shop::form.control-group.error control-name="phone" />
+                    </x-shop::form.control-group>
+
+                    {!! view_render_event('bagisto.shop.customers.signup_form.phone.after') !!}
+
                     @if (core()->getConfigData('customer.captcha.credentials.status'))
                         <div class="mb-5 flex">
                             {!! \Webkul\Customer\Facades\Captcha::render() !!}
