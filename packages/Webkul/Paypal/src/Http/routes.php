@@ -13,6 +13,8 @@ Route::group(['middleware' => ['web']], function () {
         Route::get('/cancel', [StandardController::class, 'cancel'])->name('paypal.standard.cancel');
     });
 
+    // route::get('/mercantil/redirect',[MercantilController::class, 'redirect'])->name('mercanti.redirect');
+
     Route::prefix('paypal/smart-button')->group(function () {
         Route::get('/create-order', [SmartButtonController::class, 'createOrder'])->name('paypal.smart-button.create-order');
 

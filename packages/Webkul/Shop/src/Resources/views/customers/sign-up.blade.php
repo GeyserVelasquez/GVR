@@ -181,7 +181,7 @@
                         <x-shop::form.control-group.control
                             type="text"
                             name="phone"
-                            rules="required|phone"
+                            rules="required|phone:VE"
                             :value="old('phone')"
                             :label="trans('shop::app.customers.signup-form.phone')"
                             :placeholder="trans('shop::app.customers.signup-form.phone')"
@@ -192,7 +192,49 @@
                         <x-shop::form.control-group.error control-name="phone" />
                     </x-shop::form.control-group>
 
-                    {!! view_render_event('bagisto.shop.customers.signup_form.phone.after') !!}
+                    <!-- Fecha de nacimiento -->
+                    {{-- <x-shop::form.control-group>
+                        <x-shop::form.control-group.label class="required">
+                            @lang('shop::app.customers.signup-form.date-of-birth')
+                        </x-shop::form.control-group.label>
+
+                        <x-shop::form.control-group.control
+                            type="date"
+                            name="date_of_birth"
+                            rules="required|date|before:today"
+                            :value="old('date_of_birth')"
+                            :label="trans('shop::app.customers.signup-form.date-of-birth')"
+                            :placeholder="trans('shop::app.customers.signup-form.date-of-birth')"
+                            :aria-label="trans('shop::app.customers.signup-form.date-of-birth')"
+                            aria-required="true"
+                        />
+
+                        <x-shop::form.control-group.error control-name="date_of_birth" />
+                    </x-shop::form.control-group> --}}
+
+                    <!-- Género -->
+                    {{-- <x-shop::form.control-group>
+                        <x-shop::form.control-group.label class="required">
+                            @lang('shop::app.customers.signup-form.gender')
+                        </x-shop::form.control-group.label>
+
+                        <x-shop::form.control-group.control
+                            type="select"
+                            name="gender"
+                            rules="required|in:male,female,other"
+                            :value="old('gender')"
+                            :label="trans('shop::app.customers.signup-form.gender')"
+                            :aria-label="trans('shop::app.customers.signup-form.gender')"
+                            aria-required="true"
+                        >
+                            <option value="">@lang('shop::app.customers.signup-form.select-gender')</option>
+                            <option value="male">@lang('shop::app.customers.signup-form.gender-male')</option>
+                            <option value="female">@lang('shop::app.customers.signup-form.gender-female')</option>
+                            <option value="other">@lang('shop::app.customers.signup-form.gender-other')</option>
+                        </x-shop::form.control-group.control>
+
+                        <x-shop::form.control-group.error control-name="gender" />
+                    </x-shop::form.control-group> --}}
 
                     @if (core()->getConfigData('customer.captcha.credentials.status'))
                         <div class="mb-5 flex">

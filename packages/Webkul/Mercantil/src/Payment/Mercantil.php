@@ -13,10 +13,16 @@ class Mercantil extends Payment
      */
     protected $code  = 'mercantil';
 
+        /**
+     * Return mercantil redirect url.
+     *
+     * @return string
+     */
     public function getRedirectUrl()
     {
 
-        return false;
+        return route('mercantil');
+        // return false;
 
         // $document = request()->input('customer_document'); // Obtiene el dato
         // dd($document);
@@ -25,6 +31,5 @@ class Mercantil extends Payment
 
     public function getPaymentHtml()
     {
-        return view('mercantil::checkout.payment-method');
     }
 }

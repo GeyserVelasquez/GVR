@@ -50,6 +50,9 @@ class RegistrationController extends Controller
             'first_name',
             'last_name',
             'email',
+            'phone',
+            // 'date_of_birth', // <-- nuevo campo
+            // 'gender',        // <-- nuevo campo
             'password_confirmation',
             'is_subscribed',
         ]), [
