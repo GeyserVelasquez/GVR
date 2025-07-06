@@ -47,12 +47,14 @@ return [
         ],
 
         'signup-form' => [
+            'and'                          => 'y',
             'account-exists'              => '¿Ya tienes una cuenta?',
             'bagisto'                     => 'Bagisto',
             'button-title'                => 'Registrarse',
             'click-here'                  => 'Haga clic aquí',
             'confirm-pass'                => 'Confirmar Contraseña',
             'email'                       => 'Correo Electrónico',
+            'phone'                       => 'Número de Contacto',
             'first-name'                  => 'Nombre',
             'footer'                      => '© Derechos de autor 2010 - :current_year, La Pelotera Ranch. Todos los derechos reservados.',
             'form-signup-text'            => 'Si eres nuevo en nuestra tienda, estamos encantados de tenerte como miembro.',
@@ -64,6 +66,7 @@ return [
             'gender-male'                => 'Masculino',
             'gender-female'              => 'Femenino',
             'gender-other'                => 'Otro',
+            'or'                           => 'o',
             'sign-in-button'              => 'Iniciar Sesión',
             'subscribe-to-newsletter'     => 'Suscribirse al boletín',
             'success'                     => 'Cuenta creada con éxito.',
@@ -892,7 +895,7 @@ return [
 
     'checkout' => [
         'success' => [
-            'info'          => 'Le enviaremos los detalles de su pedido y la información de seguimiento por correo electrónico',
+            'info'          => 'Le enviaremos los detalles de su pedido y la información de seguimiento por Whatsapp y correo electrónico.',
             'order-id-info' => 'Su número de pedido es #:order_id',
             'thanks'        => '¡Gracias por su pedido!',
             'title'         => 'Pedido realizado con éxito',

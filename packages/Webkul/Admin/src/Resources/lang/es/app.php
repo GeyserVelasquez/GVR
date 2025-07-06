@@ -4290,6 +4290,7 @@ return [
                     'money-transfer'                 => 'Transferencia de dinero',
                     'money-transfer-info'            => 'Transferencia de fondos de una persona o cuenta a otra, a menudo de forma electrónica, con diversos fines como transacciones o remesas.',
                     'page-title'                     => 'Métodos de pago',
+                    'pagomovil'                      => 'Pago Móvil',
                     'paid'                           => 'Pagado',
                     'paypal-smart-button'            => 'PayPal',
                     'paypal-smart-button-info'       => 'Botón inteligente de PayPal: simplifica los pagos en línea con botones personalizables para transacciones seguras y multimétodo en sitios web y aplicaciones.',
@@ -4304,6 +4305,7 @@ return [
                     'sort-order'                     => 'Orden de clasificación',
                     'status'                         => 'Estado',
                     'title'                          => 'Título ',
+                    'whatsapp-payments'              => 'Pagos por WhatsApp',
                 ],
 
                 'order-settings' => [
